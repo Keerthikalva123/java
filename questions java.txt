@@ -1,0 +1,355 @@
+1.self introduction
+
+my name is XXX
+i have 2+ years of exp on java backend developer 
+(front end i have just awarenose on angular 10..,but i didn't workedon angular)
+
+I have been associated with Some company in hyderabad location
+(payroll company name is xxx it is in XXXX location)
+
+and also I am handling the project name is XXXXX(project name).
+in this project we are using 
+java8 ==>[(new features)==>streams,lamda expression,optional,DATe API]
+Spring framework(core,mvc,orm ==Modules)
+spring boot 
+ORM tools like Hibernate and jpa 
+data base side ORacle and mysql.
+
+======================================================================
+what is your role and what is your Responsibilities?
+--------------------------------------------------------
+Role :java backend developer /java developer 
+Responsibilities ::
+-------------------
+
+we are following agile process with scrum methodology..and in this process we are using 
+Bug traking tool ==>jira 
+code repository ==> github...(versioning control tool) we are using
+
+in Agile process , 
+daily attending the scrum calls/standup calls (10-15 min)==> here will discuss about what i have done yesterday and what I need to do today ..any issues while development will discuss with team memebrs ...
+
+
+(and my team members are 7 to 8 members 
+3 developers==>2 sr developer,1 jr developer
+2 testers 
+1 business analyst  ==>(product owner)==>he is directly interact with client..
+1 team lead ==>scrum master ..
+)
+
+every 2 weeks we have sprint planning .. here will discuss with product backlog(work)
+here estimation for work ==> my sr developer/team lead will take care. that person will assign the work to us..
+i will get work through jira , that work like enhanccement level or bugs related work I will get ...
+
+once i will get the work ==> i will first do the analysis . after that I will start development .. once compelted the developmenet I will test manaully .. after that i will commit the code into github repository.
+Junit5 -->plan to use 
+
+
+2.on time delivery
+If with in the sprint , i am not deliverable to client. 
+first i will inform to Business analyst and Lead. 
+This is the issue i am facing, its taking time these all are i have done some more time we need to complete... like will conduct the meeting and will explain..
+
+If i am the lead means, i will conduct the meeting with client and my business analyst. and here what ever i have facing the challenges, we are explain them. 
+I will try to convey in meeting itself.. and after that i will send mail to client and business analyst and my team members..
+
+
+3.biggest challange
+In my previous project as a Java developer, one of the biggest challenges I faced was ensuring the reliability and scalability of the application. 
+The project involved developing a complex software system that handled a large volume of data and user requests.
+To address this challenge, I had to carefully consider the system's architecture, 
+choose appropriate data structures and algorithms, and implement robust testing and monitoring mechanisms.
+
+4.association,xaggregation,and composition
+Association :
+Association refers to the relationship between multiple objects.
+ It refers to how objects are related to each other and how they are using each other's functionality. 
+Composition and aggregation are two types of association.
+
+Composition :
+The composition is the strong type of association. 
+An association is said to composition if an Object owns another object and another object cannot exist without the owner object.
+ Consider the case of Human having a heart. Here Human object contains the heart and heart cannot exist without Human.
+
+Aggregation :
+Aggregation is a weak association.
+ An association is said to be aggregation if both Objects can exist independently.
+ For example, a Team object and a Player object. The team contains multiple players but a player can exist without a team.
+5.jdk
+6.jvm
+7.jre
+
+8.classloaders
+ 
+Classloader is a subsystem of JVM which is used to load class files. 
+Whenever we run the java program, it is loaded first by the classloader. There are three built-in classloaders in Java.
+
+Bootstrap ClassLoader: 
+This is the first classloader which is the super class of Extension classloader.
+ It loads the rt.jar file which contains all class files of Java Standard Edition like java.lang package classes,
+ java.net package classes, java.util package classes, java.io package classes, java.sql package classes etc.
+Extension ClassLoader: 
+This is the child classloader of Bootstrap and parent classloader of System classloader. 
+It loades the jar files located inside $JAVA_HOME/jre/lib/ext directory.
+System/Application ClassLoader:
+ This is the child classloader of Extension classloader.
+ It loads the classfiles from classpath. By default, classpath is set to current directory.
+ You can change the classpath using "-cp" or "-classpath" switch. It is also known as Application classloader.
+9.constructor chaining
+10.access modifiers
+Types of Access modifiers
+public ,private ,protected default==> all are access modifiers in java 
+
+Public: 
+The access level of a public modifier is everywhere. 
+It can be accessed from within the class, outside the class, within the package and outside the package.
+Private: 
+The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+Default: 
+The access level of a default modifier is only within the package.
+ It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+Protected: 
+The access level of a protected modifier is within the package and outside the package through child class. 
+If you do not make the child class, it cannot be accessed from outside the package.
+
+
+
+11.serialization and deserilization
+  Serialization:
+    Serialization in Java is a mechanism of converting the state of an object into a byte-stream.
+    like it is a process of converting an object from java supported form to either file supported form or netword supported form.
+    by using FileoutputStream and ObjectOutputStream classes we can achive serialization.
+De-Serialization: 
+
+    De-Serialization in Java is a mechanism of converting from the byte-stream into the state of an object.
+    Like it is the process of converting an Object from either network supported form or file supported form to java supported form.
+    By using FileInputStream and ObjectInputStream classes we can achive De-serialization.
+Transient Keyword?
+The transient keyword is the modifier application only for variable and we cannot apply for methods and classes
+--At the time of serialization,if we don't want to save the value of a particular variable to make security constraints then we should go for transient keyword.
+--At the time of serialization JVM Will ignores the original value of transient variable and default value will be serialization.    
+12.design patterns
+->Singleton design pattern 
+  
+   Singleton Pattern says that just"define a class that has only one instance and provides a global point of access to it".
+   In other words, a class must ensure that only single instance should be created and single object can be used by all other classes.
+   There are two forms of singleton design pattern
+      Early Instantiation: creation of instance at load time.
+       Lazy Instantiation: creation of instance when required.
+    ->Advantage of Singleton design pattern
+           Saves memory because object is not created at each request. Only single instance is reused again and again.
+     ->Usage of Singleton design pattern
+            Singleton pattern is mostly used in multi-threaded and database applications. It is used in logging, caching, thread pools, configuration settings etc.
+      To create the singleton class, we need to have static member of class, private constructor and static factory method.
+        -> Static member: It gets memory only once because of static, itcontains the instance of the Singleton class.
+         -> Private constructor: It will prevent to instantiate the Singleton class from outside the class.
+         ->Static factory method: This provides the global point of access to the Singleton object and returns the instance to the caller.
+->Builder pattern
+       Builder Pattern says that "construct a complex object from simple objects using step-by-step approach"
+       It is mostly used when object can't be created in single step like in the de-serialization of a complex object.
+
+       ->Advantage of Builder Design Pattern
+          The main advantages of Builder Pattern are as follows:
+            ->it provides clear separation between the construction and representation of an object.
+             ->It provides better control over construction process.
+             ->It supports to change the internal representation of objects.
+->Factory Method Pattern
+A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object 
+but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
+
+The Factory Method Pattern is also known as Virtual Constructor.
+
+  ->Advantage of Factory Design Pattern
+      -> Factory Method Pattern allows the sub-classes to choose the type of objects to create.
+      -> It promotes the loose-coupling by eliminating the need to bind application-specific classes into the code. 
+         That means the code interacts solely with the resultant interface or abstract class, so that it will work with any 
+          classes that implement that interface or that extends that abstract class.
+    ->Usage of Factory Design Pattern
+        ->When a class doesn't know what sub-classes will be required to create
+         ->When a class wants that its sub-classes specify the objects to be created.
+         ->When the parent classes choose the creation of objects to its sub-classes.
+->Abstract Factory Pattern
+ Abstract Factory Pattern says that just define an interface or abstract class for creating families of related (or dependent) objects but 
+without specifying their concrete sub-classes.That means Abstract Factory lets a class returns a factory of classes. 
+So, this is the reason that Abstract Factory Pattern is one level higher than the Factory Pattern.
+An Abstract Factory Pattern is also known as Kit.
+     ->Advantage of Abstract Factory Pattern
+           ->Abstract Factory Pattern isolates the client code from concrete (implementation) classes.
+            ->It eases the exchanging of object families.
+            ->It promotes consistency among objects.
+     ->Usage of Abstract Factory Pattern
+            ->When the system needs to be independent of how its object are created, composed, and represented.
+            ->When the family of related objects has to be used together, then this constraint needs to be enforced.
+            ->When you want to provide a library of objects that does not show implementations and only reveals interfaces.
+            ->When the system needs to be configured with one of a multiple family of objects
+
+13.oops concepts
+-> data hiding
+    data hiding is nothing but hiding of data.java is secure because of datahiding.
+     we can achieve data hiding by using private keyword.
+->Polymorphism
+   If one task is performed in different ways, it is known as polymorphism. 
+   For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
+   In Java, we use method overloading and method overriding to achieve polymorphism.
+    ->method overloading
+        same method name with different arguments is known as method overloading.
+     ->method overriding
+        it is also known as run-time polymorphism
+        when the child class tries to use the same method signature in the parent class .it is known as method  overriding.
+     ->method hiding
+       if a subclass defines a static method with the same signature as a static method in the super class, 
+       in such a case, the method in the subclass hides the one in the superclass." 
+       The mechanism is known as method hiding. It happens because static methods are resolved at compile time.
+  
+->encapsulation
+     Binding (or wrapping) code and data together into a single unit are known as encapsulation.
+     For example, a capsule, it is wrapped with different medicines.
+     encapsulation is a combination of datahiding and abstraction 
+     encapsulation can be achieved by creating all fields as private and by using setter and getter methods,
+. 
+-> abstraction
+   Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+   we can achieve abstraction by using abstact class or interface.
+   
+
+->interface
+   An interface in Java is a blueprint of a behavior.
+    A Java interface contains static constants and abstract methods.
+   when we declare any variable in interface it is automatically converted into static final variable.
+
+  
+dff between abstraction and interface
+   multiple inheritance can be done by using interface but it is not possible by using abstraction
+    we cannot create objects to both abstract class and interface.
+   both abstact and interface can able to access abstract mrethods.
+
+->inheritance
+    Inheritance is nothing but is-a relationship or parent-child relationship
+     When child class acquires all the properties and behaviors of a parent class, it is known as inheritance. 
+    It provides code reusability. It is used to achieve runtime polymorphism.
+
+
+
+Method signature
+ it is a combination of method name and arguments
+duplicate  method signature   is not allowed
+
+
+
+
+
+14..diff btw throw and throws?
+
+	-throw is used within the method.	                        throws is used with the method signature.
+         we can raise exception using throw keyword                      we can declare exceptions using throws
+          Using throw keyword, we can only propagate                   Using throws keyword, we can declare both checked and unchecked exceptions.
+          unchecked exception i.e.,                                    However, the throws keyword can be used to propagate checked exceptions only.
+         the checked exception cannot be propagated using              We can declare multiple exceptions using throws keyword that can be thrown by the method.
+   throw only.                                                             method. For example, main() throws IOException, SQLException.                                                            
+We are allowed to throw only one exception at a time i.e. 
+we cannot throw multiple exceptions.
+
+15.difference btw noclassdeffounderror and classnotfoundexception?
+ClassNotFoundException occurs when you try to load a class at runtime using Class.forName() or loadClass() methods and requested classes are not found in classpath.
+ Most of the time this exception will occur when you try to run an application without updating the classpath with JAR files. 
+This exception is a checked Exception derived from java.lang.Exception class and you need to provide explicit handling for it. 
+
+NoClassDefFoundError occurs when the class was present during compile time and the program was compiled and linked successfully
+ but the class was not present during runtime. 
+It is an error that is derived from LinkageError.
+
+
+16.what is exception?
+an exception in Java is “an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+. These are the errors that occur at compile time and run time. 
+It occurs in the code written by the developers.
+ It can be recovered by using the try-catch block and throws keyword. There are two types of exceptions i.e. checked and unchecked.
+
+
+
+17.how can handle exceptions?
+Exception Handling in Java is one of the effective means to handle runtime errors 
+so that the regular flow of the application can be preserved.
+Java Exception Handling is a mechanism to handle runtime errors such as  ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+we can achieve exception handling by using try-catch or throws keyword.
+
+
+18.two types of exceptions?
+
+1) Checked Exception
+The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. 
+For example, IOException, SQLException, etc.
+Checked exceptions are called compile-time exceptions 
+because these exceptions are checked at compile-time by the compiler.
+ 
+2) Unchecked Exception
+The classes that inherit the RuntimeException are known as unchecked exceptions. 
+For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc.
+the unchecked exceptions are just opposite to the checked exceptions.
+ Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+ 
+
+19..differences and examples of checked, unchecked
+                 Checked Exception	                                                                  Unchecked Exception
+1.	Checked exceptions happen at compile time when 
+the source code is transformed into an executable code.                            Unchecked exceptions happen at runtime when the executable program starts running.
+2.	The checked exception is checked by the compiler.	                   These types of exceptions are not checked by the compiler.
+3.	Checked exceptions can be created manually.	                           They can also be created manually.
+4.	This exception is counted as a sub-class of the class.	                   This exception happens in runtime, and hence it is not included in the exception class.
+5.	Java Virtual Machine requires the exception to to be caught or handled.	   Java Virtual Machine does not need the exception to be caught or handled.
+
+20.hierarchy of exception?
+
+21..difference btw exception and error?
+Exception
+   An exception in Java is “an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions
+.  These are the errors that occur at compile time and run time.
+   It occurs in the code written by the developers. 
+   It can be recovered by using the try-catch block and throws keyword. 
+   There are two types of exceptions i.e. checked and unchecked.
+Errors
+   Errors are problems that mainly occur due to the lack of system resources. It cannot be caught or handled. It indicates a serious problem. 
+   It occurs at run time. These are always unchecked.
+   An example of errors is OutOfMemoryError, LinkageError, AssertionError, etc. are the subclasses of the Error class.
+
+
+22.what is stackoverflowerror?
+A stack overflow is a type of buffer overflow error that occurs when a computer program tries 
+to use more memory space in the call stack than has been allocated to that stack.
+
+
+23.diff btw final,finally,finalize?
+final- 
+   final is a keyword which can be used along with variables,methods and classes
+   when it is used along with variables this values cant be changed.
+   when it us used with methods this methods cannot be override.
+   when it is used with class ,this classes cant be inherited.
+finally-‌
+   finally is a block which can be used when we want to execute mandatory statements
+    and it can be used along with try and catch block and only one finally block can be used along with try and catch block.
+finalize-
+    ficnalize  is a method that can be called by the jvm before calling the garbagecollector .
+     finalize is a method using for cleanup activities which will be called by jvm whenever we call gb for destroying  objects.
+
+
+24.static keyword
+ The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class. 
+
+static variable: 
+If you declare any variable as static, it is known as a static variable.
+The static variable can be used to refer to the common property of all objects (which is not unique for each object), 
+for example, the company name of employees, college name of students, etc.
+The static variable gets memory only in the class area at the time of class loading.
+
+static method:
+If you apply static keyword with any method, it is known as static method.
+A static method belongs to the class rather than the object of a class.
+A static method can be invoked without the need for creating an instance of a class.
+A static method can access static data member and can change the value of it.
+
+
+25.diamond problem
+26.method reference
+27.lamdia expression
+28.optional class
+
